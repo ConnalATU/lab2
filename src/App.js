@@ -9,7 +9,8 @@ import { Footer } from './components/footer'; //importing  footer component
 import Container from 'react-bootstrap/Container'; //import bootstrap container
 import Nav from 'react-bootstrap/Nav'; //import bootstrap nav
 import Navbar from 'react-bootstrap/Navbar'; //import bootstrap Navbar
-
+import {Read} from './components/read';
+import {Create} from './components/create';
 import {
   BrowserRouter as Router,
   Switch,
@@ -42,8 +43,8 @@ class App extends React.Component {
           </Navbar>
           <Routes>{/*Adding Router Paths*/}
             <Route path='/' element={<Content></Content>} exact></Route>
-            <Route path='/read' element={<Header></Header>} exact></Route>
-            <Route path='/create' element={<Footer></Footer>} exact></Route>
+            <Route path='/read' element={<Read></Read>} exact></Route>
+            <Route path='/create' element={<Create></Create>} exact></Route>
           </Routes>
           {/*<Header></Header>
        <Content></Content>
